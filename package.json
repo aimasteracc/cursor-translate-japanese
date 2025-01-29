@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "mintlify dev",
+    "build": "mintlify build"
+  },
+  "dependencies": {
+    "mintlify": "^7.8.0"
+  }
+} 

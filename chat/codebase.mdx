@@ -1,0 +1,30 @@
+---
+title: "コードベースを使用"
+---
+
+### デフォルトのコードベースチャット
+
+コードベースが[インデックス化](/context/codebase-indexing) されていない場合、Cursor Chatはまずコードベース全体を検索するための検索クエリを生成しようとします。より正確な結果を得るためには、[埋め込み検索](#embeddings-search) を使用することをお勧めします。
+
+<Frame>
+<img src="/images/chat/no-embeddings.png" />
+</Frame>
+
+
+### 埋め込み検索
+
+[コードベースのインデックス化](/context/codebase-indexing) により、Cursor Chatはコードベースに基づいて正確な応答を生成できます。
+
+メッセージを入力した後に`Ctrl/⌘ + Enter`を押すと、Cursor Chatはインデックス化されたコードベースをスキャンして関連するコードを見つけます。これは一般的に、
+会話のコンテキストに含めるコードスニペットをすばやく取得するのに適しています。コードベース検索をより詳細に制御し、より正確な結果を得るには、
+`@codebase`を使用できます。
+
+<Frame>
+<img src="/images/chat/embeddings.png" />
+</Frame>
+
+### 高度なコードベース検索
+
+`@Codebase`を使用すると、Cursor コードベースチャットはより詳細な検索を実行します。
+
+`@Codebase`についての詳細は[こちら](/context/@-symbols/@-codebase) をご覧ください。

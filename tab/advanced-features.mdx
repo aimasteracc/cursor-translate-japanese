@@ -1,0 +1,28 @@
+---
+title: "高度な機能"
+---
+
+### ピーク表示でのタブ機能
+
+"定義へ移動"や"型定義へ移動"のピーク表示でもCursorのタブ機能を使用できます。これは、例えば関数呼び出しに新しい引数を追加する際に便利です。
+
+<Frame>
+  <img src="/images/cpp/cpp-in-peek.png"/>
+</Frame>
+
+特にvimで`gd`と組み合わせて使用すると、関数定義を修正し、その使用箇所をまとめて修正できるため重宝します。
+
+### <div className="flex items-center" style={{ gap: '6px' }}>  <span className="cursor-pointer my-0">Cursorの予測機能</span></div>
+
+Cursorは編集を受け入れた後の次の移動先を予測することができます。
+利用可能な場合、タブを押して次の場所に移動でき、タブを連続して押すことで編集箇所を順々に進むことができます。
+
+<Frame caption="Cursorが次の場所を予測し、そこでの編集を提案しました。">
+<img src="/images/cpp/cp.png" />
+</Frame>
+
+### <div className="flex items-center" style={{ gap: '6px' }}>  <span className="cursor-pointer my-0">部分的な受け入れ</span></div>
+
+提案の次の単語を受け入れるには、`Ctrl/⌘`と右矢印キーを押します（または`editor.action.inlineSuggest.acceptNextWord`を任意のキーバインドに設定します）。
+
+部分的な受け入れを有効にするには、`Cursor Settings` > `Features` > `Cursor Tab`に移動してください。

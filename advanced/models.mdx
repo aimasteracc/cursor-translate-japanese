@@ -1,0 +1,38 @@
+---
+title: "モデル"
+---
+
+Cursor Chat、Ctrl/⌘ K、およびTerminal Ctrl/⌘ Kを使用すると、お好みの異なるモデルを簡単に切り替えることができます。
+
+
+### モデルドロップダウン
+
+AIの入力ボックスの下に、使用したいモデルを選択できるドロップダウンが表示されます。デフォルトでは、Cursorには以下のモデルが使用可能な状態で用意されています：
+
+- [`GPT-4o`](https://openai.com/index/hello-gpt-4o/)
+- [`GPT-4`](https://openai.com/index/gpt-4/)
+- [`Claude 3.5 Sonnet`](https://www.anthropic.com/news/claude-3-5-sonnet)
+- `cursor-small`
+  - `cursor-small`はCursor独自のモデルで、`GPT-4`ほど賢くはありませんが、より高速で、ユーザーは無制限にアクセスできます。
+
+`Cursor Settings` > `Models` > `Model names`から追加のモデルを追加できます。
+
+<Frame>
+  <img src="/images/advanced/model-toggle.png" />
+</Frame>
+
+
+### 長文コンテキスト専用モデル
+
+長文コンテキストチャットでは、長文コンテキストをサポートするモデルに選択が制限されます：
+
+- [`gpt-4o-128k`](https://platform.openai.com/docs/models)
+- [`gemini-1.5-flash-500k`](https://deepmind.google/technologies/gemini/flash/)
+- [`claude-3-haiku-200k`](https://www.anthropic.com/news/claude-3-family)
+- [`claude-3-sonnet-200k`](https://www.anthropic.com/news/claude-3-family)
+- [`claude-3-5-sonnet-200k`](https://www.anthropic.com/news/claude-3-5-sonnet)
+
+
+### モデルXのコンテキストウィンドウはどのくらいですか？
+
+チャットでは、現在約20,000トークンに制限しています（またはモデルがそれだけのコンテキストをサポートしていない場合はそれ以下）。cmd-Kでは、応答時間と品質のバランスを取るため、約10,000トークンに制限しています。長文コンテキストチャットでは、モデルの最大コンテキストウィンドウを使用します。

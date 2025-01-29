@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/out/$1",
+      "headers": {
+        "Cache-Control": "s-maxage=86400"
+      }
+    }
+  ],
+  "builds": [
+    {
+      "src": "**/*.html",
+      "use": "@vercel/static"
+    }
+  ]
+} 
